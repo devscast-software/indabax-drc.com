@@ -1,7 +1,37 @@
 import event from "../data/event";
 
+type Link = {
+    link: string,
+    label: string
+}
+
+type HeaderLinkProps = {
+    link: Link
+}
+
+function HeaderLink({link}: HeaderLinkProps) {
+    return (
+        <li key={link.link}>
+            <a href={link.link} title={link.link} aria-label={link.link} className="block transition hover:text-primary md:px-4">
+                <span>{link.label}</span>
+            </a>
+        </li>
+    );
+}
+
+function HeaderHumburgerButton() {
+    return (
+        <div className="relative flex max-h-10 items-center lg:hidden">
+            <label id="hamburger" role="button" htmlFor="toggle_nav" aria-label="humburger" className="relative -mr-6 p-6">
+                <div aria-hidden="true" id="line" className="m-auto h-0.5 w-5 rounded bg-white transition duration-300"></div>
+                <div aria-hidden="true" id="line2" className="m-auto mt-2 h-0.5 w-5 rounded bg-white transition duration-300"></div>
+            </label>
+        </div>
+    );
+}
+
 export default function Header() {
-    const links = [
+    const links: Link[] = [
         {link: '/', label: 'Acceuil'},
         {link: '/#sponsors', label: 'Sponsors'},
         {link: '/#orateurs', label: 'Orateurs'},
@@ -24,24 +54,13 @@ export default function Header() {
                                 </div>
                                 <span className="text-2xl font-bold text-white">Indaba𝕏 DRC</span>
                             </a>
-                            <div className="relative flex max-h-10 items-center lg:hidden">
-                                <label id="hamburger" role="button" htmlFor="toggle_nav" aria-label="humburger" className="relative -mr-6 p-6">
-                                    <div aria-hidden="true" id="line" className="m-auto h-0.5 w-5 rounded bg-slate-600 transition duration-300"></div>
-                                    <div aria-hidden="true" id="line2" className="m-auto mt-2 h-0.5 w-5 rounded bg-slate-600 transition duration-300"></div>
-                                </label>
-                            </div>
+                            <HeaderHumburgerButton />
                         </div>
                         <label aria-hidden="true" htmlFor="toggle_nav" className="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-slate-800/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden"></label>
                         <div className="invisible absolute top-full left-0 z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 border bg-black/80 p-8 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100 border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
                             <div className="w-full text-white lg:w-auto lg:pr-4 lg:pt-0">
                                 <ul className="flex flex-col gap-6 font-medium tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
-                                    {links.map(link => (
-                                        <li>
-                                            <a href={link.link} title={link.link} aria-label={link.link} className="block transition hover:text-primary md:px-4">
-                                                <span>{link.label}</span>
-                                            </a>
-                                        </li>
-                                    ))}
+                                    {links.map((link: Link) => (<HeaderLink link={link} />))}
                                 </ul>
                             </div>
 
