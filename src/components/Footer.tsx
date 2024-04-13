@@ -26,14 +26,9 @@ export default function Footer() {
             <div className="relative max-w-7xl mx-auto px-8 md:px-12 lg:px-6">
                 <img src="/images/logo-white.png" className="w-16 mx-auto" alt="indabax logo" loading="lazy" width="1702" height="1702" />
                 <span className="w-max block mx-auto font-semibold text-2xl">Deep learning Indaba𝕏 DRC</span>
-                <FooterSocialLink />
 
-                <a href="https://devscast.tech/" target="_blank" rel="noopener" className="mt-8 w-max mx-auto border border-gray-700 px-6 py-3.5 flex items-center justify-center flex-wrap gap-4 text-gray-400 bg-dark/70 duration-300 hover:bg-dark">
-                    Développé par
-                    <span className="flex gap-3 items-center text-slate-700">
-                        <img className="h-8" src="https://devscast.tech/images/logo.png" alt="logo devscast" />
-                        <span className="text-xl">Devscast</span>
-                    </span>
+                <a href="https://devscast.tech/" target="_blank" rel="nofollow" className="mt-8 w-max mx-auto border border-gray-700 px-6 py-3.5 flex items-center justify-center flex-wrap gap-4 text-gray-400 bg-dark/70 duration-300 hover:bg-dark">
+                    Développé par Devscast Software
                 </a>
             </div>
         </footer>

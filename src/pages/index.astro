@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Pricing from '../components/Pricing';
 import Speakers from '../components/Speakers';
 import Organizers from '../components/Organizers';
+import Features from "../components/Features";
 import event from '../data/event';
 ---
 <Layout title="Deep Learning Indabax DRC">
@@ -11,56 +12,18 @@ import event from '../data/event';
 	<section class="pt-28 z-10">
         <div class="relative max-w-7xl mx-auto px-8 md:px-12 lg:px-6">
             <div class="mb-16 mx-auto lg:w-3/5 text-center">
-                <h2 class="mb-8 text-4xl font-bold text-white md:text-4xl lg:text-6xl">
-                    Conférence sur le Machine Learning et l'IA
+                <h2 class="mb-4 text-4xl font-bold text-white md:text-4xl lg:text-6xl">
+                    Conférence sur le Deep Learning et l'IA
                 </h2>
+                <p class="text-primary font-bold text-2xl mb-8">{event.description}</p>
                 <p class="text-white text-lg">
                     IndabaX DR Congo s’inscrit dans la ligne de conférences internationales nommées Deep learning Indaba et
                     qui se déroulent chaque année dans différents pays d’Afrique.
                     L’objectif est de rassembler la communauté congolaise des praticiens, chercheurs, étudiants, professionnels et passionnés du domaine de l’intelligence artificielle,
                     en particulier l'apprentissage automatique (Machine Learning) et en profond (Deep Learning).
                 </p>
-                <p class="text-gray-300 text-lg mt-4">
-                    Cette conférence permet de créer un écosystème entre les différents acteurs (privé, public, écoles et universités)
-                    afin d’utiliser l’intelligence artificielle (IA) comme un levier dans le développement et la croissance de notre pays la RDC.
-                </p>
-                <p class="text-gray-300 text-lg mt-4">
-                    Cette année, beaucoup de pays Africains dont la RDC organisent cet événement.
-                    Le thème retenu pour cette édition qui se tient en hybride à {event.location},
-                    est <span class="text-primary">“{event.description}”.</span>
-                </p>
             </div>
-            <div class="lg:w-2/3 mx-auto">
-                <div class="relative md:text-lg py-16 grid sm:grid-cols-2 gap-24 before:absolute before:inset-0 before:w-0 sm:before:w-0.5 before:h-full before:m-auto before:bg-slate-300">
-                    <div class="sm:col-start-2">
-                        <h3 class="text-3xl text-white">Recherche</h3>
-                        <p class="mt-4 text-white">Échanger les connaissances scientifiques en IA entre chercheurs et toutes les parties prenantes</p>
-                    </div>
-                    <div class="sm:col-start-1 sm:text-right">
-                        <h3 class="text-3xl">Applications de l'IA</h3>
-                        <p class="mt-4 text-white">Présenter les applications de l’IA dans différents domaines dans lesquels exercent nos partenaires.</p>
-                    </div>
-                    <div class="sm:col-start-2 row-start-3">
-                        <h3 class="text-3xl text-white">Communauté</h3>
-                        <p class="mt-4 text-white">
-                            Connecter avec d’autres chercheurs et praticiens. Élargir notre communauté,
-                            donner une plate-forme pour présenter et partager nos recherches ainsi que nos intérêts dans l’IA.
-                        </p>
-                    </div>
-                    <div class="sm:col-start-1 row-start-4 sm:text-right">
-                        <h3 class="text-3xl text-white">Tutoriels</h3>
-                        <p class="mt-4 text-white">Fournir une introduction pratique à l’apprentissage automatique pour les débutants.</p>
-                    </div>
-                    <div class="sm:col-start-2 row-start-5">
-                        <h3 class="text-3xl text-white">Hackathon</h3>
-                        <p class="mt-4 text-white">Proposer des solutions au problème posé en utilisant les données fournies.</p>
-                    </div>
-                    <div class="sm:col-start-1 row-start-6 sm:text-right">
-                        <h3 class="text-3xl text-white">Session D’affiches (Posters)</h3>
-                        <p class="mt-4 text-white">Présenter votre travail et obtenir les commentaires des experts.</p>
-                    </div>
-                </div>
-            </div>
+            <Features />
         </div>
     </section>
 

@@ -24,7 +24,7 @@ function PricingOptionPrice({price}: PricingOptionPriceProps) {
 function PricingOption({title, price, icon}: PricingOptionProps) {
     return (
         <div className="relative p-8">
-            <img className="w-20 mx-auto" src={icon} alt="student pricing" />
+            <img className="w-12 mx-auto" src={icon} alt="student pricing" />
             <div className="mt-12 space-y-6 mb-20">
                 <h3 className="text-2xl text-white font-semibold text-center">{title}</h3>
                 <PricingOptionPrice price={price} />
@@ -49,13 +49,13 @@ export default function Pricing() {
                 </div>
                 <div className="mt-12 grid items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <div className="relative bg-neutral-900">
-                        <PricingOption price={event.pricing.student} title="Étudiants" icon='https://indabax.co.za/images/icons/icon-1.png' />
+                        <PricingOption price={event.pricing.student} title="Étudiants" icon='/images/icons/student.png' />
                     </div>
                     <div className="relative bg-neutral-800 scale-105">
-                        <PricingOption price={event.pricing.academic} title="Académiques" icon='https://indabax.co.za/images/icons/icon31.png' />
+                        <PricingOption price={event.pricing.academic} title="Académiques" icon='/images/icons/graduating-student.png' />
                     </div>
                     <div className="relative bg-neutral-900">
-                        <PricingOption price={event.pricing.professional} title='Professionnels' icon='https://indabax.co.za/images/icons/icon-2.png' />
+                        <PricingOption price={event.pricing.professional} title='Professionnels' icon='/images/icons/businessman.png' />
                     </div>
                 </div>
             </div>

@@ -29,19 +29,19 @@ export type IndabaEvent = {
         professional: number
     },
     sponsors: Sponsor[],
-    orgnizers: Person[],
+    organizers: Person[],
     speakers: Person[]
 }
 
 export default {
     id: 3,
-    name: 'Indabax 2023 - Université Nouveaux Horizons', 
-    description: "L'Intelligence artificielle: enjeux, opportunités et facteurs humains",
-    location: "Université Nouveaux Hozirons, Lubumbashi, Haut-Katanga R.D. Congo",
+    name: 'Indabax 2024 - Université de Lubumbashi',
+    description: "L'Intelligence artificielle pour l'exploitation minière durable : Innovation et impact environnemental",
+    location: "Université de Lubumbashi, Lubumbashi, Haut-Katanga R.D. Congo",
     registrationGoogleFormLink: '',
     programGoogleDocsLink: '',
-    eventEndsAt: 'Jun 17 2023',
-    eventStartsAt: 'Jun 15 2023',
+    eventEndsAt: '22 Août 2024',
+    eventStartsAt: '24 Août 2024',
     pricing: {
         student: 20,
         academic: 35,
@@ -54,7 +54,7 @@ export default {
         {name: 'NeoTex', image: '/sponsors/6482e84df37ea368335328.png', link: 'https://neotex.com', category: 'platinum'},
         {name: 'Mozilla', image: '/sponsors/6482eae52c18e726856962.png', link: 'https://mozilla.org', category: 'platinum'},
     ],
-    orgnizers: [
+    organizers: [
         {name: 'Nicanor Mayumu', role: 'Director, IndabaX DRC', organization: 'Mapon University', image: '/organizers/632f2b56cec9e786115539.jpeg', link: 'https://www.linkedin.com/in/nicanor-mayumu-500366141/', country: 'cd'},
         {name: 'Saint-jean Djungu', role: 'Supervisor', organization: 'Université Nouveaux Horizons', image: '/organizers/6435b4431982d148698159.jpeg', link: 'https://scholar.google.be/citations?user=ljQWHb8AAAAJ&hl=fr', country: 'cd'},
         {name: 'Godwill Ilunga', role: 'Director, Local Organizer', organization: 'Université Nouveaux Horizons', image: '/organizers/643561c40bf5a049771911.jpeg', link: 'hhttps://www.linkedin.com/in/godwill-ilunga-b76a4865/', country: 'cd'},

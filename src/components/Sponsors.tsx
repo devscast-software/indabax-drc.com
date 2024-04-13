@@ -8,7 +8,9 @@ export default function Sponsors() {
             </h2>
             <div className="m-auto mt-12 xl:px-12">
                 <div className="grid grid-cols-4 flex-wrap justify-center items-center gap-6">
-                    {event.sponsors.map((s: Sponsor) => (<img key={s.image} src={s.image} title={s.name} className="contrast-100 h-12 w-auto mx-auto" loading="lazy" alt={"Logo " + s.name} />))}
+                    {event.sponsors.map((s: Sponsor) => (
+                        <img key={s.image} src={s.image} title={s.name} className="contrast-100 h-12 w-auto mx-auto" loading="lazy" alt={"Logo " + s.name} />
+                    ))}
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ function HeaderLink({link}: HeaderLinkProps) {
     );
 }
 
-function HeaderHumburgerButton() {
+function HeaderHamburgerButton() {
     return (
         <div className="relative flex max-h-10 items-center lg:hidden">
             <label id="hamburger" role="button" htmlFor="toggle_nav" aria-label="humburger" className="relative -mr-6 p-6">
@@ -32,7 +32,7 @@ function HeaderHumburgerButton() {
 
 export default function Header() {
     const links: Link[] = [
-        {link: '/', label: 'Acceuil'},
+        {link: '/', label: 'Accueil'},
         {link: '/#sponsors', label: 'Sponsors'},
         {link: '/#orateurs', label: 'Orateurs'},
         {link: '/#organisateurs', label: 'Organisateurs'},
@@ -54,7 +54,7 @@ export default function Header() {
                                 </div>
                                 <span className="text-2xl font-bold text-white">Indaba𝕏 DRC</span>
                             </a>
-                            <HeaderHumburgerButton />
+                            <HeaderHamburgerButton />
                         </div>
                         <label aria-hidden="true" htmlFor="toggle_nav" className="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-slate-800/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden"></label>
                         <div className="invisible absolute top-full left-0 z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 border bg-black/80 p-8 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100 border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
