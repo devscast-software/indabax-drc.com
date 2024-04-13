@@ -50,7 +50,7 @@ export default {
     sponsors: [
         {name: 'Zindi', image: '/sponsors/632f1784dc7d6263823796.png', link: 'https://zindi.africa', category: 'platinum'},
         {name: 'Deep learning indaba', image: '/sponsors/632f18aed2506398507585.svg', link: 'https://deeplearningindaba.com', category: 'platinum'},
-        {name: 'Université Nouveaux Horizons', image: 'public/sponsors/63f4eec820e66159906472.png', link: 'https://unhorizons.com', category: 'platinum'},
+        // {name: 'Université Nouveaux Horizons', image: 'public/sponsors/63f4eec820e66159906472.png', link: 'https://unhorizons.com', category: 'platinum'},
         {name: 'NeoTex', image: '/sponsors/6482e84df37ea368335328.png', link: 'https://neotex.com', category: 'platinum'},
         {name: 'Mozilla', image: '/sponsors/6482eae52c18e726856962.png', link: 'https://mozilla.org', category: 'platinum'},
     ],
