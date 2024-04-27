@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  outDir: '/home/bernard-ng/dev/COMMUNITY/indabax-drc.com-build'
+  outDir: '/home/bernard-ng/dev/projects/COMMUNITY/indabax-drc.com-build'
 });
