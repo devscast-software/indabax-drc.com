@@ -38,7 +38,7 @@ export default {
     name: 'Indabax 2024 - Université de Lubumbashi',
     description: "L'Intelligence artificielle pour l'exploitation minière durable : Innovation et impact environnemental",
     location: "Université de Lubumbashi, Lubumbashi, Haut-Katanga R.D. Congo",
-    registrationGoogleFormLink: '',
+    registrationGoogleFormLink: 'https://forms.gle/mJurbmMWsATQYLJx6',
     programGoogleDocsLink: '',
     eventEndsAt: '22 Août 2024',
     eventStartsAt: '24 Août 2024',
