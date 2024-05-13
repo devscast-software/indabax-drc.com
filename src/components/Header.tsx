@@ -36,8 +36,8 @@ export default function Header() {
         {link: '/#sponsors', label: 'Sponsors'},
         {link: '/#orateurs', label: 'Orateurs'},
         {link: '/#organisateurs', label: 'Organisateurs'},
-        {link: '/archives', label: 'Archives'},
-        {link: 'mailto:indabaxdrc2022@gmail.com', label: 'Contact'}
+        {link: '/code-de-conduite', label: 'Termes'},
+        {link: 'mailto:info@indabax-drc.com', label: 'Contact'}
     ]
 
     return (
